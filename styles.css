@@ -1,13 +1,24 @@
-body {
-    background-color: #f5f5dc; /* Beige background */
-    color: #4a4a4a; /* Dark gray font color */
-}
 
+body {
+    background-image: url('img/bg-3.JPG');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment:scroll;
+            background-position: center 25%;
+            color: #626868; /* Change text color here */
+            /* background-size: 70%; */
+}
+@media (max-width: 768px) {
+    body {
+        background-image: none;
+        background-color: #AD9E8E; /* Change background color for mobile devices */
+    }
+}
 a {
     color: #4dc0b5; /* Green font color */
 }
 
 
 .font-handwritten {
-    font-family: 'Indie Flower', cursive; /* Handwritten font */
+    font-family: 'Indie Flower', cursive;
 }
