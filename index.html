@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SzidiCoaching</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.core.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="bg-gray-100 font-sans leading-normal tracking-normal">
+
+    <!--Nav-->
+    <nav id="header" class="fixed w-full z-10 top-0">
+
+        <div id="progress" class="h-1 z-20 top-0"
+            style="background:linear-gradient(to right, #4dc0b5 var(--scroll), transparent 0);"></div>
+
+        <div class="w-full md:max-w-4xl mx-auto flex flex-wrap items-center justify-between mt-0 py-3">
+
+            <div class="pl-4">
+                <a class="text-gray-900 text-base no-underline hover:no-underline font-extrabold text-xl font-handwritten"
+                    href="#">
+                    SzidiCoaching
+                </a>
+            </div>
+
+            <div class="block lg:hidden pr-4">
+                <button id="nav-toggle"
+                    class="flex items-center px-3 py-2 border rounded text-gray-500 border-gray-600 hover:text-white hover:border-white">
+                    <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <title>Menu</title>
+                        <path d="M0 3h20v2H0zM0 9h20v2H0zM0 15h20v2H0z" />
+                    </svg>
+                </button>
+            </div>
+
+            <div class="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden lg:block mt-2 lg:mt-0 bg-white lg:bg-transparent text-gray-900 p-4 lg:p-0 z-20"
+                id="nav-content">
+                <ul class="list-reset lg:flex justify-end flex-1 items-center">
+                    <li class="mr-3">
+                        <a class="inline-block py-2 px-4 text-gray-900 font-bold no-underline"
+                            href="#">Szolgáltatások</a>
+                    </li>
+                    <li class="mr-3">
+                        <a class="inline-block text-gray-600 no-underline hover:text-gray-900 hover:text-underline py-2 px-4"
+                            href="#">Rólam</a>
+                    </li>
+                    <li class="mr-3">
+                        <a class="inline-block text-gray-600 no-underline hover:text-gray-900 hover:text-underline py-2 px-4"
+                            href="#">A coachingról</a>
+                    </li>
+                </ul>
+                <a href="#" id="nav-action"
+                    class="mx-auto lg:mx-0 hover:underline bg-white text-gray-900 font-bold rounded-full mt-4 lg:mt-0 py-2 px-8 shadow opacity-75">Kapcsolat</a>
+            </div>
+        </div>
+
+        <hr class="border-b border-gray-100 opacity-25 my-0 py-0" />
+    </nav>
+
+    <!--Hero-->
+    <div class="pt-24">
+        <div class="container px-3 mx-auto flex flex-wrap flex-col md:flex-row items-center">
+            <!--Right Col-->
+            <div class="w-full md:w-3/5 py-6 text-center">
+                <img class="w-1/2 rounded-full" src="img/main.jpg">
+            </div>
+            <!--Left Col-->
+            <div class="flex flex-col w-full md:w-2/5 justify-center items-start text-center md:text-left">
+                <!-- <p class="uppercase tracking-loose w-full">What business are you?</p> -->
+                <h1 class="my-4 text-5xl font-bold leading-tight">Iszlai-Szegedi Szidi</h1>
+                <p class="leading-normal text-2xl mb-8">Life, Testtudatosság, Karrier és Emberi Kapcsolatok coaching</p>
+                <a class="mx-auto lg:mx-0 hover:underline bg-white text-gray-900 font-bold rounded-full my-6 py-4 px-8 shadow-lg" href='mailto:szegedi_szidi@yahoo.com'>Írj nekem</a>
+            </div>
+            
+        </div>
+    </div>
+    <div class="container mx-auto px-4 py-8">
+        <h2 class="text-3xl font-bold mb-4">Visszajelzések</h2>
+        <div class="glide">
+            <div class="glide__track" data-glide-el="track">
+                <ul class="glide__slides">
+                    <li class="glide__slide">
+                        <blockquote class="text-lg italic">"This is a reference."</blockquote>
+                        <p class="text-sm">- Reference 1</p>
+                    </li>
+                    <li class="glide__slide">
+                        <blockquote class="text-lg italic">"This is another reference."</blockquote>
+                        <p class="text-sm">- Reference 2</p>
+                    </li>
+                    <li class="glide__slide">
+                        <blockquote class="text-lg italic">"This is yet another reference."</blockquote>
+                        <p class="text-sm">- Reference 3</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="glide__bullets" data-glide-el="controls[nav]">
+                <button class="glide__bullet" data-glide-dir="=0"></button>
+                <button class="glide__bullet" data-glide-dir="=1"></button>
+                <button class="glide__bullet" data-glide-dir="=2"></button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        //Javascript to toggle the menu
+        document.getElementById('nav-toggle').onclick = function () {
+            document.getElementById("nav-content").classList.toggle("hidden");
+        }
+
+        new Glide('.glide', {
+            type: 'carousel',
+            startAt: 0,
+            perView: 1,
+            autoplay: 500,
+            hoverpause: true
+        }).mount();
+
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/glide.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            new Glide('.glide', {
+                type: 'carousel',
+                startAt: 0,
+                perView: 1,
+                autoplay: 2000,
+                hoverpause: true
+            }).mount();
+        });
+    </script>
+</body>
+
+</html>
