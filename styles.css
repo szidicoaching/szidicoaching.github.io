@@ -1,0 +1,12 @@
+body {
+    background-color: #f5f5dc; /* Beige background */
+    color: #4a4a4a; /* Dark gray font color */
+}
+
+a {
+    color: #4dc0b5; /* Green font color */
+}
+
+.font-handwritten {
+    font-family: 'Indie Flower', cursive; /* Handwritten font */
+}
