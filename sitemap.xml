@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>http://www.szidicoaching.hu/</loc>
+        <lastmod>2024-05-06</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.00</priority>
+    </url>
+    <url>
+        <loc>http://www.szidicoaching.hu/about.html</loc>
+        <lastmod>2024-05-06</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>http://www.szidicoaching.hu/services.html</loc>
+        <lastmod>2024-05-06</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>http://www.szidicoaching.hu/coaching.html</loc>
+        <lastmod>2024-05-06</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+        <url>
+        <loc>http://www.szidicoaching.hu/contact.html</loc>
+        <lastmod>2024-05-06</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+</urlset>
