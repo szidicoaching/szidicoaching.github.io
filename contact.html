@@ -16,6 +16,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.core.min.css">
     <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
 </head>
 
 <body class="bg-beige-100 font-sans leading-normal tracking-normal">
@@ -70,8 +72,39 @@
 
         <hr class="border-b border-gray-100 opacity-25 my-0 py-0" />
     </nav>
-
+    <div class="hero bg-cover bg-center py-20">
+        <div class="container mx-auto px-4">
+            <p class="text-xl text-custom-gray mb-8">Online és személyes coaching alkalmak Budapesten.</p>
+            <div class="max-w-md mx-auto bg-white p-8 rounded-lg shadow-lg">
+                <form action="mailto:info@szidicoaching.hu" method="post" enctype="text/plain" class="mb-4">
+                    <input type="hidden" name="subject" value="Üzenet a SzidiCoaching oldalról">
+                    <input type="text" name="name" placeholder="Név" required class="block w-full bg-gray-100 border border-gray-300 rounded-md p-2 focus:outline-none focus:bg-white focus:border-gray-500">
+                    <input type="email" name="email" placeholder="Email" required class="block w-full mt-2 bg-gray-100 border border-gray-300 rounded-md p-2 focus:outline-none focus:bg-white focus:border-gray-500">
+                    <textarea name="message" rows="4" placeholder="Üzenet" required class="block w-full mt-2 bg-gray-100 border border-gray-300 rounded-md p-2 focus:outline-none focus:bg-white focus:border-gray-500"></textarea>
+                    <button type="submit" class="mt-4 bg-custom-blue text-white rounded-md px-4 py-2 hover:bg-blue-600 focus:outline-none focus:bg-blue-600">Küldés</button>
+                </form>
+                <div class="text-center">
+                    <p class="text-custom-gray">Online és személyes coaching alkalmak Budapesten.</p>
+                    <p class="text-custom-gray">Telefonszám: <a href="tel:06306116445" class="text-blue-500">06306116445</a></p>
+                    <p class="text-custom-gray">Email: <a href="mailto:info@szidicoaching.hu" class="text-blue-500">info@szidicoaching.hu</a></p>
+                    <p class="text-custom-gray">Kövess engem: 
+                        <a href="#" class="text-custom-blue hover:text-blue-400 text-lg"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-custom-blue hover:text-blue-400 text-lg"><i class="fab fa-instagram"></i></a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
     
+    
+    
+    
+    <script>
+        //Javascript to toggle the menu
+        document.getElementById('nav-toggle').onclick = function () {
+            document.getElementById("nav-content").classList.toggle("hidden");
+        }
+    </script>
 </body>
 
 </html>
