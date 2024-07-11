@@ -1,174 +1,290 @@
 <!DOCTYPE html>
-<html lang="en">
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
+<html lang="zxx">
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SzidiCoaching</title>
-    <meta name="description" content="Iszlai-Szegedi Szidi, Life, Hivatás és Karrier coach">
-    <meta name="keywords" content="coaching, life coach, karrier coach, hivatás coach, budapest, online coach, icf, akkreditált, szülöi coach, coaching jelentése">
-    <meta name="author" content="Iszlai-Szegedi Szidi">
-    <meta property="og:title" content="SzidiCoaching">
-    <meta property="og:description" content="Iszlai-Szegedi Szidi, Life, Hivatás és Karrier coach">
-    <meta property="og:image" content="img/main.jpg">
-    <meta property="og:url" content="https://szidicoaching.hu">
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.core.min.css">
-    <link rel="stylesheet" href="styles.css">
-    <script type="text/javascript">
-        (function(c,l,a,r,i,t,y){
-            c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-            t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-            y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-        })(window, document, "clarity", "script", "m7ouisy776");
-    </script>
+    <!-- FAVICON ICON  -->
+    <link rel="apple-touch-icon" sizes="180x180" href="image/asset/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="image/asset/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="image/asset/favicon-16x16.png">
+    <link rel="shortcut icon" href="image/asset/favicon.ico" type="image/x-icon">
+    <!-- GOOGLE FONT -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&family=Rubik&display=swap"
+        rel="stylesheet">
+    <!-- ICONTFONT -->
+    <link href="css/vendor/icofont.min.css" rel="stylesheet">
+    <!-- BOOTSTRAP -->
+    <link href="css/vendor/bootstrap.min.css" rel="stylesheet">
+    <!-- MAGNIFIC POPUP -->
+    <link href="css/vendor/magnific.css" rel="stylesheet">
+    <!-- HEADLINE ANIMATED -->
+    <link href="css/vendor/headlineanimated.css" rel="stylesheet">
+    <!-- OWL CARAOUSEL CSS -->
+    <link href="css/vendor/owl.carousel.min.css" rel="stylesheet">
+    <link href="css/vendor/owl.theme.default.min.css" rel="stylesheet">
+    <!-- MAIN CSS -->
+    <link href="css/themes.css" rel="stylesheet">
+    <!-- RESPONSIVE CSS -->
+    <link href="css/responsive.css" rel="stylesheet">
 </head>
 
-<body class="bg-beige-100 font-sans leading-normal tracking-normal">
-
-    <!--Nav-->
-    <nav id="header" class="fixed w-full z-10 top-0">
-
-        <div id="progress" class="h-1 z-20 top-0"
-            style="background:linear-gradient(to right, #4dc0b5 var(--scroll), transparent 0);"></div>
-
-        <div class="w-full md:max-w-4xl mx-auto flex flex-wrap items-center justify-between mt-0 py-3">
-
-            <div class="pl-4">
-                <a class="text-gray-900 text-base no-underline hover:no-underline font-extrabold text-xl font-handwritten"
-                    href="/">
-                    Szidicoaching
-                </a>
-            </div>
-
-
-            <div class="block lg:hidden pr-4">
-                <button id="nav-toggle"
-                    class="flex items-center px-3 py-2 border rounded text-gray-500 border-gray-600 hover:text-white hover:border-white">
-                    <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                        <title>Menu</title>
-                        <path d="M0 3h20v2H0zM0 9h20v2H0zM0 15h20v2H0z" />
-                    </svg>
-                </button>
-            </div>
-
-            <div class="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden lg:block mt-2 lg:mt-0 bg-white lg:bg-transparent text-gray-900 p-4 lg:p-0 z-20"
-                id="nav-content">
-                <ul class="list-reset lg:flex justify-end flex-1 items-center">
-                    <li class="mr-3">Tel:06306116445</li>
-                    <li class="mr-3">
-                        <a class="inline-block text-gray-600 no-underline hover:text-gray-900 hover:text-underline py-2 px-4"
-                            href="/services.html">Szolgáltatások</a>
-                    </li>
-                    <li class="mr-3">
-                        <a class="inline-block text-gray-600 no-underline hover:text-gray-900 hover:text-underline py-2 px-4"
-                            href="/about.html">Rólam</a>
-                    </li>
-                    <li class="mr-3">
-                        <a class="inline-block text-gray-600 no-underline hover:text-gray-900 hover:text-underline py-2 px-4"
-                            href="/coaching.html">A coachingról</a>
-                    </li>
-                </ul>
-                <a href="/contact.html" id="nav-action"
-                    class="mx-auto lg:mx-0 hover:underline bg-white text-gray-900 font-bold rounded-full mt-4 lg:mt-0 py-2 px-8 shadow opacity-75">Kapcsolat</a>
-            </div>
+<body>
+    <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <!-- PRELOADER -->
+    <div class="preloader">
+        <div class="ellipsis">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
         </div>
-
-        <hr class="border-b border-gray-100 opacity-25 my-0 py-0" />
-    </nav>
-
-    <!--Hero-->
-    <div class="pt-24">
-        <div class="container px-3 mx-auto flex flex-wrap flex-col md:flex-row items-center">
-            <div class="w-full md:w-1/3 py-6 md:pr-3 text-center"> <!-- Adjusted padding to md:pr-3 -->
-                <img class="w-2/3 md:w-full rounded-full mx-auto mb-6 md:mb-0" src="img/main.jpg" alt="picture of coach Iszlai-Szegedi Szidi">
-            </div>
-            <div class="w-full md:w-2/3 py-6 text-center md:text-left md:pl-3 flex justify-end"> <!-- Adjusted padding to md:pl-3 -->
-                <div class="max-w-md mx-auto md:mx-0 mt-6 md:mt-0"> <!-- Added mt-6 for more distance from the image -->
-                    <h1 class="my-4 text-5xl font-bold leading-tight">Iszlai-Szegedi Szidi</h1>
-                    <p class="leading-normal text-2xl mb-6 md:mb-8">Life, Hivatás és Karrier coach</p>
-                    <a class="mx-auto lg:mx-0 hover:underline bg-white text-gray-900 font-bold rounded-full my-6 py-4 px-8 shadow-lg" href='mailto:info@szidicoaching.hu'>Írj nekem</a>
+    </div>
+    <!-- MAIN WRAP -->
+    <div class="main-wrap">
+        <!-- SMALL MENU -->
+        <div class="overlay-fade"></div>
+        <div class="wrap-mobilemenu">
+            <button id="closesmenu" class="button-menu">
+                <i class="icofont-close-squared-alt"></i>
+            </button>
+            <nav class="menu-mobile">
+                <ul class="navigation-list">
+                    <li><a class="nav-link" href="/index.html">Rólam</a></li>
+                    <li><a class="nav-link" href="#portfolio-wrap">Szolgáltatások</a></li>
+                    <li><a class="nav-link" href="#wrap-resume">A coachingról</a></li>
+                    <li><a class="nav-link" href="/contact.html">Kapcsolat</a></li>
+                </ul>
+            </nav>
+        </div>
+        <!-- HEADER WRAP -->
+        <header id="header-wrap">
+            <div class="main-headerwrap container">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <div class="logo-wrap">
+                            <img src="image/asset/logo.png" alt="logo" />
+                        </div>
+                    </div>
+                    <div class="col-lg-9 navigation-big">
+                        <nav class="navigation-wrap">
+                            <ul class="navigation-list">
+                                <li><a class="nav-link" href="/index.html">Rólam</a></li>
+                                <li><a class="nav-link" href="#portfolio-wrap">Szolgáltatások</a></li>
+                                <li><a class="nav-link" href="#wrap-resume">A coachingról</a></li>
+                                <li><a class="nav-link" href="/contact.html">Kapcsolat</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <button id="openmenu" class="button-menu">
+                        <i class="icofont-navigation-menu"></i>
+                    </button>
                 </div>
             </div>
-        </div>
-    </div>
+        </header>
+        <!-- END HEADER WRAP -->
+        <!-- HERO WRAP -->
+        <section id="wrap-hero" class="jarallax" style="background: url('image/hero/11.jpg'); background-size: cover; background-position: center;
+        background-repeat: no-repeat;">
+            <div class="d-flex align-items-center justify-content-center inner-herocontent">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="detail-herowrap">
+                                <h1>Iszlai-Szegedi Szidi</h1>
+                                <span class="sec-word">Life, Hivatás és Karrier coach</span>
+                                <div class="sosmed-home head-sosmed">
+                                    <ul class="sosmed-list">
+                                        <li><a href="#"><i class="icofont-facebook"></i> </a></li>
+                                        <li><a href="#"><i class="icofont-instagram"></i> </a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="sec-detailherowrap">
+                                <p class="title-detail">KÖSZÖNTELEK</p>
+                                <h3 class="right-quote">"Hallgatlak, kérdezlek, néha csenddé válok, de mindvégig biztonságot nyújtok az
+                                    utadon."
 
+                                </h3>
 
-
-
-
-
-
-
-    <div class="container mx-auto px-4 py-8">
-        <h2 class="text-3xl font-bold mb-4">Visszajelzések</h2>
-        <div class="glide">
-            <div class="glide__track" data-glide-el="track">
-                <ul class="glide__slides">
-                    <li class="glide__slide">
-                        <blockquote class="text-lg italic">"A közös munka Szidivel rendkívül hatékony volt. 
-                            Értő figyelemmel, és nyitottsággal vezette az üléseket. Személyisége, kedvessége segített abban, hogy a problémáimat őszintén megosszam Vele.
-                            Független személyként rávezetett arra, hogy az elakadásaimat sikeresen tudjam kezelni. 
-                            Szeretettel ajánlom minden út keresőnek!"</blockquote>
-                        <p class="text-sm">- Cs.B.Andi</p>
-                    </li>
-                    <li class="glide__slide">
-                        <blockquote class="text-lg italic">"Szidi nyugodt, derűs személyisége, végtelen türelme nagyon megkönnyítette a coaching
-                            folyamatban való részvételt. A keretek tiszták és egyértelműek voltak, lényegre törő kérdései
-                            segítettek több –a folyamatba általam behozott- konfliktushelyzet esetén is „tiszta vizet
-                            önteni a pohárba”. Az ülések alkalmával nagy szabadságot kaptam az aktuális téma
-                            megválasztásában, ugyanakkor Szidi kézben tartotta a teljes folyamatot, ezért a csapongó
-                            gondolataim ellenére az üléseink mégis összeálltak egy kerek egésszé. A legnagyobb
-                            segítséget az jelentette, hogy egy- egy problémakört megfelelő mélységig körbejártunk,
-                            mégsem merültünk el benne, megtalálhattam a saját megoldásaimat, és – ami kiemelten
-                            hasznos volt számomra- gyakorlati lépésekre bontottuk ezeket a megoldási terveket. A
-                            különböző elakadások kezelésében több felismerésre is szert tettem Szidi jól célzott
-                            kérdései, lényeglátó megjegyzései kapcsán. Úgy érzem, hogy megszabadultam jó néhány
-                            nyomasztó tehertől, nagyon élveztem a közös munkát, köszönöm!"</blockquote>
-                        <p class="text-sm">- N.Zsofi</p>
-                    </li>
-                    <!-- <li class="glide__slide">
-                        <blockquote class="text-lg italic">"This is yet another reference."</blockquote>
-                        <p class="text-sm">- Reference 3</p>
-                    </li> -->
-                </ul>
+                                <div class="big-text r-text li-text">01</div>
+                                <a href="mailto:info@szidicoaching.hu" class="button-link light-b llinks">Írj nekem</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="glide__bullets" data-glide-el="controls[nav]">
-                <button class="glide__bullet" data-glide-dir="=0"></button>
-                <button class="glide__bullet" data-glide-dir="=1"></button>
-                <button class="glide__bullet" data-glide-dir="=2"></button>
+        </section>
+        <!-- END HERO WRAP -->
+        <!-- ABOUT ME WRAP -->
+        <section id="about-wrap" class="padtopbottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-7">
+                        <!-- <div class="big-text l-text da-text ">02</div> -->
+                        <div class="about-detailwrap offset-lg-4">
+                            <p class="title-detail">A TÖRTÉNETEM</p>
+                            <h3>Így <span class="sec-word">indult</span></h3>
+                            <div class="mini-detail">
+                                <p>
+                                    Szidi vagyok, coach. Kicsit még nekem is hihetetlen érzés ezt így leírni. Sok-sok év
+                                    önismeret és a gyerekek születése utáni kétely által jutottam el oda, hogy most már
+                                    el tudom mondani, hogy megtaláltam azt a szakmát, ami igazán én vagyok, amiben úgy
+                                    érzem, ki tudok teljesedni és önmagam tudok lenni megalkuvás nélkül.
+                                </p>
+                            </div>
+
+
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="wrap-imageabout">
+                            <img src="image/hero/13.jpg" alt="poto" />
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                        <!-- WHAT IDO -->
+                        <div class="col-lg-6">
+                            <div class="sec-detailherowrap">
+                                <p class="title-detail">Vélemények</p>
+                                <h2>Ügyfél <span class="sec-word">visszajelzések</span></h2>
+                            </div>
+                        </div>
+                        <div class="mini-detailwhatido ">
+                            <div id="wrapido" class="owl-carousel owl-theme">
+                                <!-- WHAT IDO ITEM -->
+                                <div class="wrap-whatido">
+                                    <div class="wrap-whatidodetail">
+                                        <div class="inner-detailido">
+                                            <i class="icofont-wheat icon-w"></i>
+                                            <h3>Andi</h3>
+                                            <p>"A közös munka Szidivel rendkívül hatékony volt.
+                                                Értő figyelemmel, és nyitottsággal vezette az üléseket. Személyisége,
+                                                kedvessége segített abban, hogy a problémáimat őszintén megosszam Vele.
+                                                Független személyként rávezetett arra, hogy az elakadásaimat sikeresen
+                                                tudjam kezelni.
+                                                Szeretettel ajánlom minden út keresőnek!"</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- WHAT IDO ITEM -->
+                                <div class="wrap-whatido">
+                                    <div class="wrap-whatidodetail">
+                                        <div class="inner-detailido">
+                                            <i class="icofont-wheat icon-w"></i>
+                                            <h3>Zsófi</h3>
+                                            <p>"Szidi nyugodt, derűs személyisége, végtelen türelme nagyon
+                                                megkönnyítette a coaching
+                                                folyamatban való részvételt. A keretek tiszták és egyértelműek voltak,
+                                                lényegre törő kérdései
+                                                segítettek több –a folyamatba általam behozott- konfliktushelyzet esetén
+                                                is „tiszta vizet
+                                                önteni a pohárba”. Az ülések alkalmával nagy szabadságot kaptam az
+                                                aktuális téma
+                                                megválasztásában, ugyanakkor Szidi kézben tartotta a teljes folyamatot,
+                                                ezért a csapongó
+                                                gondolataim ellenére az üléseink mégis összeálltak egy kerek egésszé. A
+                                                legnagyobb
+                                                segítséget az jelentette, hogy egy- egy problémakört megfelelő mélységig
+                                                körbejártunk,
+                                                mégsem merültünk el benne, megtalálhattam a saját megoldásaimat, és –
+                                                ami kiemelten
+                                                hasznos volt számomra- gyakorlati lépésekre bontottuk ezeket a megoldási
+                                                terveket. A
+                                                különböző elakadások kezelésében több felismerésre is szert tettem Szidi
+                                                jól célzott
+                                                kérdései, lényeglátó megjegyzései kapcsán. Úgy érzem, hogy
+                                                megszabadultam jó néhány
+                                                nyomasztó tehertől, nagyon élveztem a közös munkát, köszönöm!"</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="wrap-whatido">
+                                    <div class="wrap-whatidodetail">
+                                        <div class="inner-detailido">
+                                            <i class="icofont-wheat icon-w"></i>
+                                            <h3>Málna</h3>
+                                            <p>"Szidi ismertetett meg a coaching világával. Szidi nagyon kedves és mosolygós, így minden alkalom kellemes, oldott hangulatban telt. Szívvel-lélekkel vezette az üléseket és éreztem, hogy mindig összpontosít és végig rám figyel. Ezt a feltett kérdései is tükrözték,minden alkalommal elérte, hogy jobban meg akarjam ismerni magam és ebben a folyamatban nagy segítséget nyújtott számomra. Bátran ajánlom mindenkinek, aki úgy érzi, hogy életének valamely területén elakadt, és némi útmutatásra, segítségre szorul."</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- WHAT IDO ITEM -->
+                                <!-- <div class="wrap-whatido">
+                                    <div class="wrap-whatidodetail">
+                                        <div class="inner-detailido">
+                                            <i class="icofont-brush icon-w"></i>
+                                            <h3>Web Design.</h3>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut dolore
+                                                vitae repellendus natus</p>
+                                        </div>
+                                    </div>
+                                </div> -->
+                                <!-- WHAT IDO ITEM -->
+                                <!-- <div class="wrap-whatido">
+                                    <div class="wrap-whatidodetail">
+                                        <div class="inner-detailido">
+                                            <i class="icofont-code-alt icon-w"></i>
+                                            <h3>Development.</h3>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut dolore
+                                                vitae repellendus natus</p>
+                                        </div>
+                                    </div>
+                                </div> -->
+                            </div>
+                        </div>
+                        <!-- END WHAT IDO -->
+                    </div>
+                </div>
             </div>
-        </div>
+        </section>
+
+
+        <!-- FOOTER -->
+        <footer id="footer-wrap">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="wrap-title-foot">
+                            <h3><b>© 2024</b> created by leheli</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- SCROLLTOP -->
+        <a href="#" class="scroll-top">
+            <i class="icofont-arrow-up dropicon">
+            </i>
+        </a>
     </div>
-
-    <script>
-        //Javascript to toggle the menu
-        document.getElementById('nav-toggle').onclick = function () {
-            document.getElementById("nav-content").classList.toggle("hidden");
-        }
-
-        new Glide('.glide', {
-            type: 'carousel',
-            startAt: 0,
-            perView: 1,
-            autoplay: 5000,
-            hoverpause: true
-        }).mount();
-
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/glide.min.js"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            new Glide('.glide', {
-                type: 'carousel',
-                startAt: 0,
-                perView: 1,
-                autoplay: 5000,
-                hoverpause: true
-            }).mount();
-        });
-    </script>
+    <!-- END MAIN WRAP -->
+    <!-- JAVASCRIPT JQUERY -->
+    <script src="javascript/vendor/jquery.js"></script>
+    <!-- BOOTSTRAP -->
+    <script src="javascript/vendor/bootstrap.min.js"></script>
+    <!-- MAGNIFIC POPUP -->
+    <script src="javascript/vendor/magnific.js"></script>
+    <!-- OWL CAROUSEL -->
+    <script src="javascript/vendor/owl.carousel.min.js"></script>
+    <!-- ISOTOPE -->
+    <script src="javascript/vendor/isotope.js"></script>
+    <!-- HEADLINE ANIMATED -->
+    <script src="javascript/vendor/typed.js"></script>
+    <!-- JARALLAX -->
+    <script src="javascript/vendor/jarallax.js"></script>
+    <!-- MAIN JAVASCRIPT -->
+    <script src="javascript/main.js"></script>
 </body>
 
 </html>

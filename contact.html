@@ -1,112 +1,198 @@
 <!DOCTYPE html>
-<html lang="en">
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
+<html lang="zxx">
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SzidiCoaching-Kapcsolat</title>
-    <meta name="description" content="Iszlai-Szegedi Szidi, Life, Hivatás és Karrier coach">
-    <meta name="keywords" content="coaching, life coach, karrier coach, hivatás coach, budapest, online coach, icf, akkreditált, szülöi coach, coaching jelentése">
-    <meta name="author" content="Iszlai-Szegedi Szidi">
-    <meta property="og:title" content="SzidiCoaching">
-    <meta property="og:description" content="Iszlai-Szegedi Szidi, Life, Hivatás és Karrier coach">
-    <meta property="og:image" content="img/main.jpg">
-    <meta property="og:url" content="https://szidicoaching.hu">
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.core.min.css">
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
-
+    <title>SzidiCoaching</title>
+    <!-- FAVICON ICON  -->
+    <link rel="apple-touch-icon" sizes="180x180" href="image/asset/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="image/asset/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="image/asset/favicon-16x16.png">
+    <link rel="shortcut icon" href="image/asset/favicon.ico" type="image/x-icon">
+    <!-- GOOGLE FONT -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&family=Rubik&display=swap"
+        rel="stylesheet">
+    <!-- ICONTFONT -->
+    <link href="css/vendor/icofont.min.css" rel="stylesheet">
+    <!-- BOOTSTRAP -->
+    <link href="css/vendor/bootstrap.min.css" rel="stylesheet">
+    <!-- MAGNIFIC POPUP -->
+    <link href="css/vendor/magnific.css" rel="stylesheet">
+    <!-- HEADLINE ANIMATED -->
+    <link href="css/vendor/headlineanimated.css" rel="stylesheet">
+    <!-- OWL CARAOUSEL CSS -->
+    <link href="css/vendor/owl.carousel.min.css" rel="stylesheet">
+    <link href="css/vendor/owl.theme.default.min.css" rel="stylesheet">
+    <!-- MAIN CSS -->
+    <link href="css/themes.css" rel="stylesheet">
+    <!-- RESPONSIVE CSS -->
+    <link href="css/responsive.css" rel="stylesheet">
 </head>
 
-<body class="bg-beige-100 font-sans leading-normal tracking-normal">
-
-    <!--Nav-->
-    <nav id="header" class="fixed w-full z-10 top-0">
-
-        <div id="progress" class="h-1 z-20 top-0"
-            style="background:linear-gradient(to right, #4dc0b5 var(--scroll), transparent 0);"></div>
-
-        <div class="w-full md:max-w-4xl mx-auto flex flex-wrap items-center justify-between mt-0 py-3">
-
-            <div class="pl-4">
-                <a class="text-gray-900 text-base no-underline hover:no-underline font-extrabold text-xl font-handwritten"
-                    href="/">
-                    Szidicoaching
-                </a>
-            </div>
-
-
-            <div class="block lg:hidden pr-4">
-                <button id="nav-toggle"
-                    class="flex items-center px-3 py-2 border rounded text-gray-500 border-gray-600 hover:text-white hover:border-white">
-                    <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                        <title>Menu</title>
-                        <path d="M0 3h20v2H0zM0 9h20v2H0zM0 15h20v2H0z" />
-                    </svg>
-                </button>
-            </div>
-
-            <div class="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden lg:block mt-2 lg:mt-0 bg-white lg:bg-transparent text-gray-900 p-4 lg:p-0 z-20"
-                id="nav-content">
-                <ul class="list-reset lg:flex justify-end flex-1 items-center">
-                    <li class="mr-3">Tel:06306116445</li>
-                    <li class="mr-3">
-                        <a class="inline-block text-gray-600 no-underline hover:text-gray-900 hover:text-underline py-2 px-4"
-                            href="/services.html">Szolgáltatások</a>
-                    </li>
-                    <li class="mr-3">
-                        <a class="inline-block text-gray-600 no-underline hover:text-gray-900 hover:text-underline py-2 px-4"
-                            href="/about.html">Rólam</a>
-                    </li>
-                    <li class="mr-3">
-                        <a class="inline-block text-gray-600 no-underline hover:text-gray-900 hover:text-underline py-2 px-4"
-                            href="/coaching.html">A coachingról</a>
-                    </li>
-                </ul>
-                <a href="/contact.html" id="nav-action"
-                    class="mx-auto lg:mx-0 hover:underline bg-white text-gray-900 font-bold rounded-full mt-4 lg:mt-0 py-2 px-8 shadow opacity-75">Kapcsolat</a>
-            </div>
+<body>
+    <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <!-- PRELOADER -->
+    <div class="preloader">
+        <div class="ellipsis">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
         </div>
-
-        <hr class="border-b border-gray-100 opacity-25 my-0 py-0" />
-    </nav>
-    <div class="hero bg-cover bg-center py-20">
-        <div class="container mx-auto px-4">
-            <p class="text-xl text-custom-gray mb-8">Online és személyes coaching alkalmak Budapesten.</p>
-            <div class="max-w-md mx-auto bg-white p-8 rounded-lg shadow-lg">
-                <form action="mailto:info@szidicoaching.hu" method="post" enctype="text/plain" class="mb-4">
-                    <input type="hidden" name="subject" value="Üzenet a SzidiCoaching oldalról">
-                    <input type="text" name="name" placeholder="Név" required class="block w-full bg-gray-100 border border-gray-300 rounded-md p-2 focus:outline-none focus:bg-white focus:border-gray-500">
-                    <input type="email" name="email" placeholder="Email" required class="block w-full mt-2 bg-gray-100 border border-gray-300 rounded-md p-2 focus:outline-none focus:bg-white focus:border-gray-500">
-                    <textarea name="message" rows="4" placeholder="Üzenet" required class="block w-full mt-2 bg-gray-100 border border-gray-300 rounded-md p-2 focus:outline-none focus:bg-white focus:border-gray-500"></textarea>
-                    <button type="submit" class="bg-blue-500 mt-4 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-                        <span class="text-lg"><i class="far fa-paper-plane mr-2"></i>Küldés</span>
+      </div>
+    <!-- MAIN WRAP -->
+    <div class="main-wrap">
+        <!-- SMALL MENU -->
+        <div class="overlay-fade"></div>
+        <div class="wrap-mobilemenu">
+            <button id="closesmenu" class="button-menu">
+                <i class="icofont-close-squared-alt"></i>
+            </button>
+        <nav class="menu-mobile">
+            <ul class="navigation-list">
+                <li><a class="nav-link" href="/index.html">Rólam</a></li>
+                <li><a class="nav-link" href="#portfolio-wrap">Szolgáltatások</a></li>
+                <li><a class="nav-link" href="#wrap-resume">A coachingról</a></li>
+                <li><a class="nav-link" href="/contact.html">Kapcsolat</a></li>
+            </ul>
+        </nav>
+    </div>
+        <!-- HEADER WRAP -->
+        <header id="header-wrap">
+            <div class="main-headerwrap container">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <div class="logo-wrap">
+                            <img src="image/asset/logo.png" alt="logo" />
+                        </div>
+                    </div>
+                    <div class="col-lg-9 navigation-big">
+                        <nav class="navigation-wrap">
+                            <ul class="navigation-list">
+                                <li><a class="nav-link" href="/index.html">Rólam</a></li>
+                                <li><a class="nav-link" href="#portfolio-wrap">Szolgáltatások</a></li>
+                                <li><a class="nav-link" href="#wrap-resume">A coachingról</a></li>
+                                <li><a class="nav-link" href="/contact.html">Kapcsolat</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <button id="openmenu" class="button-menu">
+                        <i class="icofont-navigation-menu"></i>
                     </button>
-                </form>
-                <div class="text-center">
-                    <p class="text-custom-gray">Online és személyes coaching alkalmak Budapesten.</p>
-                    <p class="text-custom-gray">Telefonszám: <a href="tel:06306116445" class="text-blue-500">06306116445</a></p>
-                    <p class="text-custom-gray">Email: <a href="mailto:info@szidicoaching.hu" class="text-blue-500">info@szidicoaching.hu</a></p>
-                    <p class="text-custom-gray">Kövess engem: 
-                        <a href="#" class="text-custom-blue hover:text-blue-400 text-lg"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" class="text-custom-blue hover:text-blue-400 text-lg"><i class="fab fa-instagram"></i></a>
-                    </p>
                 </div>
             </div>
-        </div>
+        </header>
+        <!-- END HEADER WRAP -->
+        <!-- HERO WRAP -->
+       
+        <section id="contact-section">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <div class="contact-form">
+                            <div class="title-top">
+                                <h3>Kapcsolat</h3>
+                            </div>
+                            <div class="mini-detail">
+                                <p>
+                                    Online és személyes coaching alkalmak Budapesten.
+                                </p>
+                            </div>
+                            <form  action="https://formspree.io/f/myzgzyll"
+                            method="POST" accept-charset="utf-8" id="form-contact">
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <input type="text" placeholder="Név" name="Fname" />
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <input type="text" placeholder="Email" name="Email" />
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <textarea class="textarea" placeholder="Tudnál nekem ezzel kapcsolatban segíteni?" name="Comment"></textarea>
+                                        <button type="submit" class="button-link dark-b llinks">Küldés</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 ml-auto">
+                        <div class="detail-contact">
+                            <div class="title-top">
+                                <h3>Elérhetőségek</h3>
+                            </div>
+                            <div class="mini-detail">
+                                <p>
+                                    Hallgatlak, kérdezlek, néha csenddé válok, de mindvégig biztonságot nyújtok az utadon.
+                                </p>
+                            </div>
+                            <div class="detail-info">
+                                <i class="icofont-ui-dial-phone the-icon"></i>
+                                <div class="inner-detail">
+                                    <p>Telefon<br />
+                                        +36 30 611 6445</p>
+                                </div>
+                            </div>
+                            <div class="detail-info">
+                                <i class="icofont-ui-email the-icon"></i>
+                                <div class="inner-detail">
+                                    <p>info@szidicoaching.hu</p>
+                                </div>
+                            </div>
+                            <div class="sosmed-home foot-sosmed">
+                                <ul class="sosmed-list">
+                                    <li><a href="#"><i class="icofont-facebook"></i> </a></li>
+                                    <li><a href="#"><i class="icofont-instagram"></i> </a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- FOOTER -->
+        <footer id="footer-wrap">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="wrap-title-foot">
+                            <h3><b>© 2024</b> created by leheli</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- SCROLLTOP -->
+        <a href="#" class="scroll-top">
+            <i class="icofont-arrow-up dropicon">
+            </i>
+        </a>
     </div>
-    
-    
-    
-    
-    <script>
-        //Javascript to toggle the menu
-        document.getElementById('nav-toggle').onclick = function () {
-            document.getElementById("nav-content").classList.toggle("hidden");
-        }
-    </script>
+    <!-- END MAIN WRAP -->
+    <!-- JAVASCRIPT JQUERY -->
+    <script src="javascript/vendor/jquery.js"></script>
+    <!-- BOOTSTRAP -->
+    <script src="javascript/vendor/bootstrap.min.js"></script>
+    <!-- MAGNIFIC POPUP -->
+    <script src="javascript/vendor/magnific.js"></script>
+    <!-- OWL CAROUSEL -->
+    <script src="javascript/vendor/owl.carousel.min.js"></script>
+    <!-- ISOTOPE -->
+    <script src="javascript/vendor/isotope.js"></script>
+    <!-- HEADLINE ANIMATED -->
+    <script src="javascript/vendor/typed.js"></script>
+    <!-- JARALLAX -->
+    <script src="javascript/vendor/jarallax.js"></script>
+    <!-- MAIN JAVASCRIPT -->
+    <script src="javascript/main.js"></script>
 </body>
 
 </html>
