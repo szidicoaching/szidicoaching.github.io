@@ -1132,3 +1132,7 @@ button.button-link {
     color: #b7b7b7;
     font-size: larger;
 }
+.about-text b{
+    color: #000;
+    font-weight: 600;
+}
