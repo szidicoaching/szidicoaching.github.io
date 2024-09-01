@@ -500,7 +500,15 @@ button.button-link {
     line-height: 1.8;
     color: #b7b7b7;
 }
-
+.inline-logo {
+    /* transform: scale(0.1); */
+    vertical-align: middle;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    line-height: 1;
+    height: 1em; /* Aligns the height to the text */
+}
 .r-text {
     top: 0;
     right: 0;
