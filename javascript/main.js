@@ -55,8 +55,8 @@ $(document).ready(function () {
     margin: 50,
     autoplay: true,
     dots: true,
-    slideSpeed: 200,
-    autoplayTimeout: 7000,
+    slideSpeed: 5000,
+    autoplayTimeout: 20000,
     responsive: {
       0: {
         items: 1
@@ -82,10 +82,11 @@ $(document).ready(function () {
   partner.owlCarousel({
     loop: true,
     nav: false,
-    autoPlay: true,
+    autoPlay: false,
     touchDrag: true,
     margin: 80,
-    slideSpeed: 1000,
+    slideSpeed: 5000,
+    autoplayTimeout: 20000,
     dots: false,
     mouseDrag: true,
     responsive: {
